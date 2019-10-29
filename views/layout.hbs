@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>{{title}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  {{!-- Copiamos las fuentes importadas de google fonts --}}
+  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Open+Sans:400,700|Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+{{!-- <header class="navegacion container row"> --}}
+  <header>
+    <div class="logo">
+      <a href="/"><img src="/img/logo.svg" heigth= "150px" width="150px" class="img-fluid" alt="logo agencia"></img></a>
+    </div>
+    <nav>
+      <div class="columna">
+        <a href="/nosotros" class="nav-link">Nosotros</a>
+        <a href="/viajes" class="nav-link">Viajes</a>
+        <a href="/opiniones" class="nav-link">Opiniones</a>
+      </div>
+    </nav>
+</header>
+  {{{body}}}
+<footer>
+    
+      <div class="columna">
+        <a href="/nosotros" class="nav-link">Nosotros</a>
+        <a href="/viajes" class="nav-link">Viajes</a>
+        <a href="/opiniones" class="nav-link">Opiniones</a>
+       </div>
+       <div class="derechos">
+        <h5 class="copyright">Todos los Derechos Reservados<span> {{fechaActual}}</span></h5>
+       </div> 
+</footer>
+</body>
+</html>

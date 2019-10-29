@@ -1,0 +1,25 @@
+<h2 class="titulo">{{pagina}}</h2>
+
+
+  {{#each listaProxViajes}}
+    <div class="card-viajes">
+        <h3>{{titulo}}</h3>
+    <div class="contenedor">
+        <img src="{{imagen}}" alt="{{titulo}}" class="nosotros">
+        <div class="texto">
+          <img src="img/icono_calendario.svg" class="img-fluid iconos"s><p>Ida  {{fechaIda}} - Vuelta  {{fechaVuelta}}</p>
+          <img src="img/icono_precio.svg" class="img-fluid iconos"><p>Precio: {{precio}} Euros</p>
+        </div>
+      </div>
+      <B>Descripcion: </B>
+      <p>{{descripcion}}</p>
+      <div class="centrar">
+        <a href="viajes/{{_id}}" class="centrar btn btn-success btn-block">Más información</a>
+      </div>
+  </div>
+  {{/each}}
+
+
+<div class="centrar-button">
+  <a href="/" class="btn btn-success btn-block">Ir a pagina principal</a>
+</div>

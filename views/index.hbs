@@ -1,0 +1,60 @@
+
+<div class="slider">
+  <h1>Rio de Janeiro</h1>
+  <em>aventura</em>
+</div>
+
+{{!-- <div class="contenido"> --}}
+
+  <h2 class="titulo">Sobre nosotros</h2>
+<div class="contenedor">
+ 
+    <img src="img/inicio_nosotros.jpg" class="nosotros">
+
+  <div class="texto">
+    <p> Sed eu tincidunt elit. Cras lobortis efficitur elementum. Aenean vel facilisis arcu, vitae convallis quam. Nam vel feugiat erat. Nam id turpis et diam convallis ornare. Mauris a enim eu risus lacinia viverra id id odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    <p> Sed eu tincidunt elit. Cras lobortis efficitur elementum. Aenean vel facilisis arcu, vitae convallis quam. Nam vel feugiat erat. Nam id turpis et diam convallis ornare. Mauris a enim eu risus lacinia viverra id id odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+  </div>
+</div>
+
+<div class="descuento">
+  {{!-- <div class="contenido"> --}}
+    <h3>5% de descuento</h3>
+    <p class="titulo rojo">Viaje a Canada</p>
+    <p class="fecha rojo">20 marzo 2020 - 30 marzo 2020</p>
+    <p class="precio">2000 euros</p>
+  </div>
+</div>
+
+<h2 class="titulo">Proximos viajes</h2>
+
+{{#each listaProxViajes}}
+    <div class="card-viajes">
+        <h3>{{titulo}}</h3>
+    <div class="contenedor">
+        <img src="{{imagen}}" alt="{{titulo}}" class="nosotros">
+        <div class="texto">
+          <img src="img/icono_calendario.svg" class="img-fluid iconos"><p>Ida  {{fechaIda}} - Vuelta  {{fechaVuelta}}</p>
+          <img src="img/icono_precio.svg" class="img-fluid iconos"><p>Precio: {{precio}} Euros</p>
+        </div>
+      </div>
+      <B>Descripcion: </B>
+      <p>{{descripcion}}</p>
+      <div class="centrar">
+        <a href="viajes/{{_id}}" class="centrar btn btn-success btn-block">Más información</a>
+      </div>
+  </div>
+  {{/each}}
+
+<h2 class="titulo">Opiniones</h2>
+
+<div class="contenedor">
+{{#each opiniones}}
+    <div class="opinion">
+      <img src="img/quote.jpg" class="comillas">
+      <p class="testimoniales">{{mensaje}}</p>
+      <p class="blockquote-footer">{{nombre}}</p>
+    </div>
+{{/each}}
+</div>
+

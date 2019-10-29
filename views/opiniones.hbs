@@ -1,0 +1,38 @@
+
+<h2 class="titulo">{{pagina}}</h2>
+
+<h4 class="blockquote">Lee sobre nuestros clientes y sus experiencias</h4>
+
+{{#if errores}}
+    <p class="alert alert-danger">{{errores}}</p>
+{{/if}}
+
+  <div class="contenedor-opinion">
+{{#each opiniones}}
+    <div class="opinion-opinion">
+      <img src="img/quote.jpg" class="comillas-opinion">
+      <p class="testimoniales">{{mensaje}}</p>
+      <p class="blockquote-footer">{{nombre}}</p>
+    </div>
+{{/each}}
+</div>
+
+
+<h2 class="blockquote centrar-titulo">Añada sus comentarios</h2>
+ 
+
+<form method="POST" action="/opiniones" class="form-group">
+  <label for="nombre">Ingrese su nombre</label>
+  <input type="text" id="nombre"  name="nombre" placeholder="nombre" class="form-control" value="{{nombre}}">
+  <label for="mail">Ingrese su mail</label>
+  <input type="mail" id="mail" name="mail" placeholder="mail" class="form-control" value="{{mail}}">
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" rows="3" name="mensaje" placeholder="mensaje" class="form-control" value="{{mensaje}}"></textarea>
+  <div class="centrar-button">
+    <button type="submit" class="btn btn-success btn-block">Nuevo Mensaje</button>
+  </div>
+</form> 
+
+<div class="centrar-button">
+  <a href="/" class="btn btn-success btn-block">Ir a pagina principal</a>
+</div>
